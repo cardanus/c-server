@@ -1,0 +1,25 @@
+# App artifacts
+/_build
+/db
+/deps
+/*.ez
+log/*                                                                                                                   
+/rel                                                                                                                    
+/tmp                                                                                                                    
+
+# Generated on crash by the VM
+erl_crash.dump
+
+# Files matching config/*.secret.exs pattern contain sensitive
+# data and you should not commit them into version control.
+/config/*.secret.exs
+
+# MacOS directory settings                                                                                              
+.DS_Store                                                                                                               
+                                                                                                                        
+# Vim backup files                                                                                                      
+*~                                                                                                                      
+                                                                                                                        
+# Ignore test coverage reports                                                                                          
+/cover                                                                                                                  
+
