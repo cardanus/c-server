@@ -2,6 +2,9 @@ defmodule CserverWeb.PageController do
   use CserverWeb, :controller
 
   def index(conn, _params) do
-    render conn, "index.html"
+    conn
+    |> put_status(403)
+    |> send_resp(403, "Forbiden")
+    |> halt
   end
 end
