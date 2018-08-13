@@ -22,7 +22,6 @@ defmodule CserverWeb do
       use Phoenix.Controller, namespace: CserverWeb
       import Plug.Conn
       import CserverWeb.Router.Helpers
-      import CserverWeb.Gettext
     end
   end
 
@@ -39,7 +38,6 @@ defmodule CserverWeb do
 
       import CserverWeb.Router.Helpers
       import CserverWeb.ErrorHelpers
-      import CserverWeb.Gettext
     end
   end
 
@@ -54,7 +52,6 @@ defmodule CserverWeb do
   def channel do
     quote do
       use Phoenix.Channel
-      import CserverWeb.Gettext
     end
   end
 
