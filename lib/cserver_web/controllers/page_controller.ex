@@ -4,7 +4,7 @@ defmodule CserverWeb.PageController do
   def index(conn, _params) do
     conn
     |> put_status(403)
-    |> send_resp(403, "Forbiden")
+    |> send_resp(403, "Forbidden")
     |> halt
   end
 end

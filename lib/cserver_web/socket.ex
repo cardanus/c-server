@@ -1,11 +1,10 @@
-defmodule CserverWeb.UserSocket do
+defmodule CserverWeb.Socket do
   use Phoenix.Socket
 
-  ## Channels
-  # channel "room:*", CserverWeb.RoomChannel
-
-  ## Transports
   transport :websocket, Phoenix.Transports.WebSocket
+
+  channel "experiments:*", CserverWeb.ExperimentsChannel
+
   # transport :longpoll, Phoenix.Transports.LongPoll
 
   # Socket params are passed from the client and can
